@@ -1,0 +1,36 @@
+
+# Ignore binary files and temporary build files
+*.o
+*.so
+*.a
+*.out
+*.log
+*.history
+# Ignore backup files created by editors
+*~
+*.swp
+*.bak
+*.tmp
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore Emacs temporary files
+.#*
+
+# Ignore installation-related temporary files
+/install
+*.tar.gz
+
+# Ignore build and dependency directories
+/build
+/node_modules
+/venv
+/.env
+.DS_Store
+
+# Ignore any logs or cache files
+*.cache
+*.log
