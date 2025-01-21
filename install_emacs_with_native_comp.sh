@@ -30,7 +30,7 @@ sudo apt-get install -y build-essential gcc libgccjit-10-dev libjansson-dev \
 echo "Cloning Emacs repository..."
 
 # Clone the latest Emacs repository from Git
-cd 
+cd
 git clone https://git.savannah.gnu.org/git/emacs.git
 cd emacs
 
@@ -82,15 +82,6 @@ cat <<EOL > ~/.emacs.d/init.el
 
 ;; Disable unnecessary startup screen
 (setq inhibit-startup-message t)
-
-;; Install useful packages
-(use-package doom-themes
-  :config
-  (load-theme 'doom-one t))
-
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1))
 
 ;; Enable line numbers globally
 (global-display-line-numbers-mode t)
